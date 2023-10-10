@@ -10,6 +10,8 @@
     ./git.nix
     ./cmp.nix
     ./indent.nix
+    ./null-ls.nix
+    ./wilder.nix
     ./ionide.nix
   ];
   
