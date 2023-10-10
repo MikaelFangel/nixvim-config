@@ -8,6 +8,8 @@
     ./nvim-tree.nix
     ./lightline.nix
     ./git.nix
+    ./cmp.nix
+    ./indent.nix
     ./ionide.nix
   ];
   
