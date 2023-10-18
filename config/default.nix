@@ -25,6 +25,10 @@
       key = "<C-n>";
       action = "<CMD>NvimTreeToggle<CR>";
     }
+    {
+      key = "<space>fm";
+      action = "<CMD>lua vim.lsp.buf.format()<CR>";
+    }
     # {
     #   # Mode can be a string or a list of strings
     #   mode = "n";
