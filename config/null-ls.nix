@@ -4,11 +4,9 @@
     sources = {
       diagnostics = {
         shellcheck.enable = true;
-	statix.enable = true;
+        statix.enable = true;
       };
-      formatting = {
-        nixfmt.enable = true;
-      };
+      formatting = { nixfmt.enable = true; };
     };
   };
 }

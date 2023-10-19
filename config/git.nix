@@ -1,6 +1,6 @@
 {
-    plugins.gitsigns = {
-      enable = true;
-      currentLineBlame = true;
-    };
+  plugins.gitsigns = {
+    enable = true;
+    currentLineBlame = true;
+  };
 }
