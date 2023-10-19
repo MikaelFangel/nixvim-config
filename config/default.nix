@@ -30,6 +30,10 @@
       key = "<space>fm";
       action = "<CMD>lua vim.lsp.buf.format()<CR>";
     }
+    {
+      key = "<C-Enter>";
+      action = "<CMD>ToggleTermSendVisualLines<CR>";
+    }
     # {
     #   # Mode can be a string or a list of strings
     #   mode = "n";
