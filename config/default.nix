@@ -16,7 +16,7 @@
     ./treesitter.nix
     ./toggleterm.nix
   ];
-  
+
   colorschemes.dracula.enable = true;
 
   keymaps = [
