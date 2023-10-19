@@ -34,6 +34,10 @@
       key = "<C-Enter>";
       action = "<CMD>ToggleTermSendVisualLines<CR>";
     }
+    {
+      key = "<C-M-Enter>";
+      action = "<CMD>0<CR>VG<CMD>ToggleTermSendVisualLines<CR>";
+    }
     # {
     #   # Mode can be a string or a list of strings
     #   mode = "n";
