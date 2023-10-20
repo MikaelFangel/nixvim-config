@@ -6,7 +6,7 @@
     ./auto-pairs.nix
     ./options.nix
     ./bufferline.nix
-    ./telescope.nix
+      ./telescope.nix
     ./nvim-tree.nix
     ./lightline.nix
     ./git.nix
