@@ -1,0 +1,30 @@
+name: Format
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      contents: write
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    - name: Install nix
+      uses: cachix/install-nix-action@v23
+    - name: Run nixfmt
+      run: nix fmt
+    - name: Get git status
+      run: git status
+    - name: Commit changes
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: "treewide: nixfmt formatting"
+        branch: ${{ github.head_ref }}
