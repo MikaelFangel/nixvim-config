@@ -3,6 +3,7 @@
 {
   imports = [
     ./autosave.nix
+    ./auto-pairs.nix
     ./options.nix
     ./bufferline.nix
     ./telescope.nix
