@@ -1,8 +1,11 @@
 {
-  plugins.treesitter = {
-    enable = true;
-    nixGrammars = true;
-    indent = true;
+  plugins = {
+    treesitter = {
+      enable = true;
+      nixGrammars = true;
+      indent = true;
+    };
+    treesitter-context.enable = true;
+    rainbow-delimiters.enable = true;
   };
-  plugins.treesitter-context.enable = true;
 }
