@@ -28,3 +28,7 @@ jobs:
       with:
         commit_message: "treewide: nixfmt formatting"
         branch: ${{ github.head_ref }}
+    - name: Add label
+      uses: actions/labeler@v4
+        completed:
+        - '**'
