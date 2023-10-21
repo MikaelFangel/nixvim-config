@@ -1,7 +1,7 @@
 name: "Build and populate cache"
 on:
   workflow_run:
-    workflows: ["Format"]
+    workflows: ["format"]
     types:
       - completed
 jobs:
