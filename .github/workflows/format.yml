@@ -30,6 +30,13 @@ jobs:
         commit_message: "treewide: nixfmt formatting"
         branch: ${{ github.head_ref }}
     - name: Add label
-      uses: actions/labeler@v4
-        bug:
-          - '**'
+      uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.pull_request.addLabels({
+              pull_request_number: context.pull_request.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: ["bug"]
+            })
+
