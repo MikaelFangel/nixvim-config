@@ -5,7 +5,7 @@ on:
 
 jobs:
   tests:
-    if: ${{ github.event.label.name == 'has: formatting' }}
+    if: ${{ github.event.label.name == 'formatted' }}
     strategy:
       matrix:
         cachixName:
