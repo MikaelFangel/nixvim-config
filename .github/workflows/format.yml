@@ -32,7 +32,7 @@ jobs:
     - name: Add label
       uses: actions/github-script@v6
       with:
-        github-token: "${{ secrets.GITHUB_TOKEN }}"
+        github-token: "${{ secrets.PAT }}"
         script: |
           github.rest.issues.addLabels({
             issue_number: context.issue.number,
