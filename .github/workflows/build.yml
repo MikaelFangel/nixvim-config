@@ -1,11 +1,9 @@
 name: "Build and populate cache"
 on:
-  pull_request:
-  push:
-    branches:
-      - main
-  schedule:
-    - cron:  '51 2 * * *'
+  workflow_run:
+    workflows: ["Format"]
+    types:
+      - completed
 jobs:
   tests:
     strategy:
