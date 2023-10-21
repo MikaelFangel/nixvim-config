@@ -1,7 +1,7 @@
 name: "Build and populate cache"
 on:
-  label:
-    types: [created]
+  pull_request:
+    types: [labeled]
 
 jobs:
   tests:
