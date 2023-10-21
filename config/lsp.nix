@@ -2,10 +2,10 @@
   plugins.lsp = {
     enable = true;
     servers = {
-      gopls.enable = true;
-      rnix-lsp.enable = true;
-      clangd.enable = true;
       bashls.enable = true;
+      clangd.enable = true;
+      gopls.enable = true;
+      nixd.enable = true;
     };
     keymaps.lspBuf = {
       "gd" = "definition";
