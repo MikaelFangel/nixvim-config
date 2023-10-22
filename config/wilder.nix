@@ -1,5 +1,5 @@
 {
-  plugins.wilder-nvim = {
+  plugins.wilder = {
     enable = true;
     modes = [ ":" "/" "?" ];
   };
