@@ -13,7 +13,7 @@
     tabstop = 2;
 
     ignorecase = true;
-		incsearch = true;
+    incsearch = true;
     smartcase = true;
     wildmode = "list:longest";
 
