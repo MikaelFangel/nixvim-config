@@ -4,9 +4,9 @@
     servers = {
       bashls.enable = true;
       clangd.enable = true;
-      fsautocomplete.enable = true;
       gopls.enable = true;
-      rnix-lsp.enable = true;
+      nixd.enable = true;
+      fsautocomplete.enable = true;
     };
     keymaps.lspBuf = {
       "gd" = "definition";
