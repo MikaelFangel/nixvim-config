@@ -24,17 +24,20 @@
   keymaps = [
     # Global Mappings
     # Default mode is "" which means normal-visual-op
-    { # Toggle NvimTree
+    {
+      # Toggle NvimTree
       key = "<C-n>";
       action = "<CMD>NvimTreeToggle<CR>";
     }
-    { # Format file
+    {
+      # Format file
       key = "<space>fm";
       action = "<CMD>lua vim.lsp.buf.format()<CR>";
     }
 
     # Terminal Mappings
-    { # Escape terminal mode using ESC
+    {
+      # Escape terminal mode using ESC
       mode = "t";
       key = "<esc>";
       action = "<C-\\><C-n>";
