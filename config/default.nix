@@ -22,15 +22,24 @@
   colorschemes.dracula.enable = true;
 
   keymaps = [
-    {
-      # Default mode is "" which means normal-visual-op
+    # Global Mappings
+    # Default mode is "" which means normal-visual-op
+    { # Toggle NvimTree
       key = "<C-n>";
       action = "<CMD>NvimTreeToggle<CR>";
     }
-    {
+    { # Format file
       key = "<space>fm";
       action = "<CMD>lua vim.lsp.buf.format()<CR>";
     }
+
+    # Terminal Mappings
+    { # Escape terminal mode using ESC
+      mode = "t";
+      key = "<esc>";
+      action = "<C-\\><C-n>";
+    }
+
     # {
     #   # Mode can be a string or a list of strings
     #   mode = "n";
