@@ -11,7 +11,7 @@
     ./lightline.nix
     ./git.nix
     ./cmp.nix
-    ./null-ls.nix
+    ./none-ls.nix
     ./wilder.nix
     ./ionide.nix
     ./lsp.nix
