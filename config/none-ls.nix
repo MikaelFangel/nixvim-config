@@ -6,7 +6,10 @@
         shellcheck.enable = true;
         statix.enable = true;
       };
-      formatting = { nixfmt.enable = true; };
+      formatting = {
+        fantomas.enable = true;
+        nixfmt.enable = true;
+      };
     };
   };
 }
