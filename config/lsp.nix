@@ -8,6 +8,7 @@
       gopls.enable = true;
       nixd.enable = true;
       ruff-lsp.enable = true;
+      rust-analyzer.enable = true;
     };
     keymaps.lspBuf = {
       "gd" = "definition";
