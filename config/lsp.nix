@@ -17,4 +17,5 @@
       "K" = "hover";
     };
   };
+  plugins.rust-tools.enable = true;
 }
