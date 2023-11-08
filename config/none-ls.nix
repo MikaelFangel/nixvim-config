@@ -9,6 +9,7 @@
       formatting = {
         fantomas.enable = true;
         nixfmt.enable = true;
+        markdownlint.enable = true;
       };
     };
   };
