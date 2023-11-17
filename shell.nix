@@ -6,6 +6,9 @@ pkgs.mkShell {
     cargo
     rustc
 
+    # Elixir
+    elixir
+
     # FSharp
     dotnet-sdk
   ];
