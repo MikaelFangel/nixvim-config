@@ -8,6 +8,7 @@
       };
       formatting = {
         fantomas.enable = true;
+        gofmt.enable = true;
         nixfmt.enable = true;
         markdownlint.enable = true;
         rustfmt.enable = true;
