@@ -43,6 +43,14 @@
       action = "<C-\\><C-n>";
     }
 
+    # Rust
+    {
+      # Start standalone rust-analyzer (fixes issues when opening files from nvim tree)
+      mode = "n";
+      key = "<leader>rs";
+      action = "<CMD>RustStartStandaloneServerForBuffer<CR>";
+    }
+
     # {
     #   # Mode can be a string or a list of strings
     #   mode = "n";
