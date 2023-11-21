@@ -11,5 +11,8 @@ pkgs.mkShell {
 
     # FSharp
     dotnet-sdk
+
+    # Go
+    go
   ];
 }
