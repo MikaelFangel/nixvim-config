@@ -14,5 +14,8 @@ pkgs.mkShell {
 
     # Go
     go
+
+    # Kotlin
+    kotlin-native
   ];
 }
