@@ -1,6 +1,8 @@
 # NixVim Configuration
 This is my configuration for NixVim, because who doesn't like a declarative configuration of Vim?
 
+![Screenshot of configuration](/images/demo.png)
+
 ## How to run
 
 To run the configuration you can type the following:
