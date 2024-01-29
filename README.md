@@ -29,7 +29,7 @@ Then you can input this in you configuration.nix (be sure that you inherit input
 
 ## Contributing
 
-If there is something that you don't feel that is quite right or you have ideas for improvment please submit a issue og a PR.
+If there is something that you feel that is not quite right or you have ideas for improvment please submit a issue or a PR.
 
 ## Acknowledgements
  * [NixVim](https://github.com/nix-community/nixvim)
