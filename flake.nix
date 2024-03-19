@@ -6,41 +6,32 @@
     flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs =
-    { self
-    , nixpkgs
-    , nixvim
-    , flake-utils
-    , ...
-    } @ inputs:
-    let
-      config = import ./config; # import the module directly
-    in
-    flake-utils.lib.eachDefaultSystem (system:
-    let
-      nixvimLib = nixvim.lib.${system};
-      pkgs = import nixpkgs { inherit system; };
-      nixvim' = nixvim.legacyPackages.${system};
-      nvim = nixvim'.makeNixvimWithModule {
-        inherit pkgs;
-        module = config;
-      };
-    in
-    {
-      formatter = nixpkgs.legacyPackages.x86_64-linux.nixpkgs-fmt;
-
-      checks = {
-        default = nixvimLib.check.mkTestDerivationFromNvim {
-          inherit nvim;
-          name = "My nixvim configuration";
+  outputs = { self, nixpkgs, nixvim, flake-utils, ... }@inputs:
+    let config = import ./config; # import the module directly
+    in flake-utils.lib.eachDefaultSystem (system:
+      let
+        nixvimLib = nixvim.lib.${system};
+        pkgs = import nixpkgs { inherit system; };
+        nixvim' = nixvim.legacyPackages.${system};
+        nvim = nixvim'.makeNixvimWithModule {
+          inherit pkgs;
+          module = config;
         };
-      };
+      in {
+        formatter = nixpkgs.legacyPackages.x86_64-linux.nixpkgs-fmt;
 
-      packages = {
-        # Lets you run `nix run .` to start nixvim
-        default = nvim;
-      };
+        checks = {
+          default = nixvimLib.check.mkTestDerivationFromNvim {
+            inherit nvim;
+            name = "My nixvim configuration";
+          };
+        };
 
-      devShells.default = import ./shell.nix { inherit pkgs; };
-    });
+        packages = {
+          # Lets you run `nix run .` to start nixvim
+          default = nvim;
+        };
+
+        devShells.default = import ./shell.nix { inherit pkgs; };
+      });
 }
