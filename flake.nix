@@ -17,7 +17,8 @@
           inherit pkgs;
           module = config;
         };
-      in {
+      in
+      {
         formatter = nixpkgs.legacyPackages.x86_64-linux.nixpkgs-fmt;
 
         checks = {
