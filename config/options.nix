@@ -1,5 +1,5 @@
 {
-  config.options = {
+  config.opts = {
     updatetime = 100; # Faster completion
 
     number = true;
