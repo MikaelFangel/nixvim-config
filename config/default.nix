@@ -19,7 +19,7 @@
     ./toggleterm.nix
   ];
 
-  colorschemes.dracula.enable = true;
+  colorschemes.dracula.enable = pkgs.stdenv.isLinux;
 
   keymaps = [
     # Global Mappings
