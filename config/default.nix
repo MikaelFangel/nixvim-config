@@ -21,6 +21,8 @@
 
   colorschemes.dracula.enable = true;
 
+  globals.mapleader = "<space>";
+
   keymaps = [
     # Global Mappings
     # Default mode is "" which means normal-visual-op
@@ -31,7 +33,7 @@
     }
     {
       # Format file
-      key = "<space>fm";
+      key = "<leader>fm";
       action = "<CMD>lua vim.lsp.buf.format()<CR>";
     }
 
