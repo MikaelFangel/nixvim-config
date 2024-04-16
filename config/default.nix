@@ -22,6 +22,8 @@
   # The theme doesn't work properly on MacOS using the default terminal
   colorschemes.dracula.enable = pkgs.stdenv.isLinux;
 
+  globals.mapleader = " ";
+
   keymaps = [
     # Global Mappings
     # Default mode is "" which means normal-visual-op
@@ -32,7 +34,7 @@
     }
     {
       # Format file
-      key = "<space>fm";
+      key = "<leader>fm";
       action = "<CMD>lua vim.lsp.buf.format()<CR>";
     }
 
