@@ -19,7 +19,8 @@
     ./toggleterm.nix
   ];
 
-  colorschemes.dracula.enable = true;
+  # The theme doesn't work properly on MacOS using the default terminal
+  colorschemes.dracula.enable = pkgs.stdenv.isLinux;
 
   keymaps = [
     # Global Mappings
