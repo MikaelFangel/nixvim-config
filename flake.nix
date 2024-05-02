@@ -19,7 +19,7 @@
         };
       in
       {
-        formatter = nixpkgs.legacyPackages.x86_64-linux.nixpkgs-fmt;
+        formatter = nixpkgs.legacyPackages.${system}.nixpkgs-fmt;
 
         checks = {
           default = nixvimLib.check.mkTestDerivationFromNvim {
