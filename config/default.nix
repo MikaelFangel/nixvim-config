@@ -53,6 +53,28 @@
       action = "<CMD>Gitsigns diffthis<CR>";
     }
 
+    # Tabs
+    {
+      mode = "n";
+      key = "<leader>tn";
+      action = "<CMD>tabnew<CR>";
+    }
+    {
+      mode = "n";
+      key = "<leader>td";
+      action = "<CMD>tabclose<CR>";
+    }
+    {
+      mode = "n";
+      key = "<leader>ts";
+      action = "<CMD>tabnext<CR>";
+    }
+    {
+      mode = "n";
+      key = "<leader>tp";
+      action = "<CMD>tabprevious<CR>";
+    }
+
     # Terminal
     {
       # Escape terminal mode using ESC
