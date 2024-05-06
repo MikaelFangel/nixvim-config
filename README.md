@@ -48,6 +48,7 @@ Descriptions of all the config files/plugins used in this configuration.
 | telescope.nix | Extendable fuzzy finder over lists. |
 | toggleterm.nix | Management of multiple terminal windows. |
 | treesitter.nix | Syntax highlighting and indentation based on Tree-sitter. |
+| trouble.nix | Provides a pretty list for showing diagnostics, references, telescope results, quickfix and location lists | 
 | which_key.nix | Popup display of keybindings. |
 
 ## Contributing
