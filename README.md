@@ -27,6 +27,29 @@ Then you can input this in your configuration.nix (be sure that you inherit inpu
   };
 ```
 
+## Config and Plugins
+
+Descriptions of all the config files/plugins used in this configuration.
+
+| Name | Description |
+| --- | --- |
+| auto-pairs.nix | Pairs brackets and quotes automatically. |
+| autosave.nix | Saves changes to disk automatically. |
+| bufferline.nix | Tab-like interface for easy buffer navigation. |
+| cmp.nix | Completion source with several options. |
+| default.nix | Default configuration file for nixvim. |
+| git.nix | Gitsigns shows git decorations in Lua, including signs for added, removed, and changed lines. |
+| ionide.nix | IDE-like features for F# programming. |
+| lightline.nix | Lightweight status line. |
+| lsp.nix | Language Server Protocol support. |
+| none-ls.nix | Additional language server configurations. |
+| nvim-tree.nix | File explorer tree. |
+| options.nix | Additional options and settings for nixvim. |
+| telescope.nix | Extendable fuzzy finder over lists. |
+| toggleterm.nix | Management of multiple terminal windows. |
+| treesitter.nix | Syntax highlighting and indentation based on Tree-sitter. |
+| which_key.nix | Popup display of keybindings. |
+
 ## Contributing
 
 If there is something that you feel that is not quite right, or you have ideas for improvement, please submit an issue or a PR.
