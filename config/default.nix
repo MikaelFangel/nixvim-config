@@ -16,6 +16,7 @@
     ./telescope.nix
     ./toggleterm.nix
     ./treesitter.nix
+    ./trouble.nix
     ./which_key.nix
     ./wilder.nix
   ];
@@ -112,6 +113,18 @@
       key = "<esc>";
       action = "<C-\\><C-n>";
       options.desc = "Escape terminal mode";
+    }
+
+    # Trouble 
+    {
+      mode = "n";
+      key = "<leader>d";
+      action = "+diagnostics/debug";
+    }
+    {
+      key = "<leader>dt";
+      action = "<CMD>TroubleToggle<CR>";
+      options.desc = "Toggle trouble";
     }
 
     # Rust
