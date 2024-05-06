@@ -33,13 +33,25 @@
       key = "<C-n>";
       action = "<CMD>NvimTreeToggle<CR>";
     }
+
+    # File
+    {
+      mode = "n";
+      key = "<leader>f";
+      action = "+find/file";
+    }
     {
       # Format file
       key = "<leader>fm";
       action = "<CMD>lua vim.lsp.buf.format()<CR>";
     }
 
-    # Git
+    # Git    
+    {
+      mode = "n";
+      key = "<leader>g";
+      action = "+git";
+    }
     {
       key = "<leader>gtb";
       action = "<CMD>Gitsigns toggle_current_line_blame<CR>";
@@ -54,6 +66,11 @@
     }
 
     # Tabs
+    {
+      mode = "n";
+      key = "<leader>t";
+      action = "+tab";
+    }
     {
       mode = "n";
       key = "<leader>tn";
@@ -85,24 +102,15 @@
 
     # Rust
     {
+      mode = "n";
+      key = "<leader>r";
+      action = "+rust";
+    }
+    {
       # Start standalone rust-analyzer (fixes issues when opening files from nvim tree)
       mode = "n";
       key = "<leader>rs";
       action = "<CMD>RustStartStandaloneServerForBuffer<CR>";
     }
-
-    # {
-    #   # Mode can be a string or a list of strings
-    #   mode = "n";
-    #   key = "<leader>p";
-    #   action = "require('my-plugin').do_stuff";
-    #   lua = true;
-    #   # Note that all of the mapping options are now under the `options` attrs
-    #   options = {
-    #     silent = true;
-    #     desc = "My plugin does stuff";
-    #   };
-    # }
   ];
-
 }
