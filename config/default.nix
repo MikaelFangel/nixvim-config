@@ -2,21 +2,22 @@
 
 {
   imports = [
-    ./autosave.nix
     ./auto-pairs.nix
-    ./options.nix
+    ./autosave.nix
     ./bufferline.nix
-    ./telescope.nix
-    ./nvim-tree.nix
-    ./lightline.nix
-    ./git.nix
     ./cmp.nix
-    ./none-ls.nix
-    ./wilder.nix
+    ./git.nix
     ./ionide.nix
+    ./lightline.nix
     ./lsp.nix
-    ./treesitter.nix
+    ./none-ls.nix
+    ./nvim-tree.nix
+    ./options.nix
+    ./telescope.nix
     ./toggleterm.nix
+    ./treesitter.nix
+    ./which_key.nix
+    ./wilder.nix
   ];
 
   # The theme doesn't work properly on MacOS using the default terminal
