@@ -26,7 +26,7 @@
   globals.mapleader = " ";
 
   keymaps = [
-    # Global Mappings
+    # Global
     # Default mode is "" which means normal-visual-op
     {
       # Toggle NvimTree
@@ -39,7 +39,21 @@
       action = "<CMD>lua vim.lsp.buf.format()<CR>";
     }
 
-    # Terminal Mappings
+    # Git
+    {
+      key = "<leader>gtb";
+      action = "<CMD>Gitsigns toggle_current_line_blame<CR>";
+    }
+    {
+      key = "<leader>gtd";
+      action = "<CMD>Gitsigns toggle_deleted";
+    }
+    {
+      key = "<leader>gd";
+      action = "<CMD>Gitsigns diffthis<CR>";
+    }
+
+    # Terminal
     {
       # Escape terminal mode using ESC
       mode = "t";
