@@ -1,7 +1,8 @@
 {
   plugins.toggleterm = {
     enable = true;
-    openMapping = "<C-t>";
-    direction = "horizontal";
+    settings = {
+      open_mapping = "[[<C-t>]]";
+    };
   };
 }
