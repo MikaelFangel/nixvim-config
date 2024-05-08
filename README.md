@@ -36,7 +36,7 @@ Descriptions of all the config files/plugins used in this configuration.
 | auto-pairs.nix | Pairs brackets and quotes automatically. |
 | autosave.nix | Saves changes to disk automatically. |
 | bufferline.nix | Tab-like interface for easy buffer navigation. |
-| cmp.nix | Completion source with several options. |
+| cmp.nix | Completion source with several options, including copilot. |
 | default.nix | Default configuration file for nixvim. |
 | git.nix | Gitsigns shows git decorations in Lua, including signs for added, removed, and changed lines. |
 | ionide.nix | IDE-like features for F# programming. |
