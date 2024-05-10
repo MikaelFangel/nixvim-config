@@ -2,6 +2,12 @@
 {
   plugins = {
     luasnip.enable = true;
+    copilot-lua = {
+      enable = true;
+      suggestion.enabled = false;
+      panel.enabled = false;
+    };
+
     cmp-buffer = { enable = true; };
 
     cmp-emoji = { enable = true; };
@@ -30,6 +36,7 @@
           }
           { name = "nvim_lua"; }
           { name = "path"; }
+          { name = "copilot"; }
         ];
 
         formatting = {
