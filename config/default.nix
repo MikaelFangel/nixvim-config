@@ -72,9 +72,9 @@
       options.desc = "Gitsigns diff this buffer";
     }
     {
-     mode = "n";
-     key = "<leader>gr";
-     action = "+resets";
+      mode = "n";
+      key = "<leader>gr";
+      action = "+resets";
     }
     {
       key = "<leader>grh";
