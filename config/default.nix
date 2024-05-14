@@ -1,5 +1,3 @@
-{ pkgs, ... }:
-
 {
   imports = [
     ./auto-pairs.nix
@@ -21,8 +19,7 @@
     ./wilder.nix
   ];
 
-  # The theme doesn't work properly on MacOS using the default terminal
-  colorschemes.dracula.enable = pkgs.stdenv.isLinux;
+  colorschemes.dracula.enable = true;
 
   globals.mapleader = " ";
 
