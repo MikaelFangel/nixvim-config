@@ -71,6 +71,21 @@
       action = "<CMD>Gitsigns diffthis<CR>";
       options.desc = "Gitsigns diff this buffer";
     }
+    {
+     mode = "n";
+     key = "<leader>gr";
+     action = "+resets";
+    }
+    {
+      key = "<leader>grh";
+      action = "<CMD>Gitsigns reset_hunk<CR>";
+      options.desc = "Gitsigns reset hunk";
+    }
+    {
+      key = "<leader>grb";
+      action = "<CMD>Gitsigns reset_buffer<CR>";
+      options.desc = "Gitsigns reset current buffer";
+    }
 
     # Tabs
     {
