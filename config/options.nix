@@ -1,3 +1,5 @@
+{lib, pkgs, ...}:
+
 {
   config.opts = {
     updatetime = 100; # Faster completion
@@ -19,5 +21,7 @@
 
     swapfile = false;
     undofile = true; # Build-in persistent undo
+
+    termguicolors = lib.mkForce pkgs.stdenv.isLinux;
   };
 }
