@@ -2,6 +2,12 @@
 This is my configuration for NixVim, because who doesn't like a declarative configuration of Vim?
 
 ![Screenshot of configuration](/images/demo.png)
+<details>
+<summary>More Screenshots</summary>
+
+![Screenshot of configuration](/images/copilot.png)
+![Screenshot of configuration](/images/trouble.png)
+</details>
 
 ## How to run
 
