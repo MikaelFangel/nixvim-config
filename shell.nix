@@ -11,6 +11,8 @@ pkgs.mkShell {
 
     # FSharp
     dotnet-sdk
+    fsautocomplete
+    fantomas
 
     # Go
     go
