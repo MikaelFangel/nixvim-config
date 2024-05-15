@@ -2,7 +2,7 @@
   <img src="/images/logo.png" width="200" />
 </p>
 
-<h1 align="center">Nixvim Configuration</h1>
+<h1 align="center">NixVim Configuration</h1>
 This is my configuration for NixVim, because who doesn't like a declarative configuration of Vim?
 
 ![Screenshot of configuration](/images/demo.png)
