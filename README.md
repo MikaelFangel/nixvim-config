@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">NixVim Configuration</h1>
-This is my configuration for NixVim, because who doesn't like a declarative configuration of Vim?
+Because who doesn't like a declarative configuration of Neovim?
 
 ![Screenshot of configuration](/images/demo.png)
 <details>
