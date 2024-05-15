@@ -6,7 +6,6 @@
         bashls.enable = true;
         clangd.enable = true;
         elixirls.enable = true;
-        fsautocomplete.enable = true;
         gopls.enable = true;
         kotlin-language-server.enable = true;
         nixd.enable = true;
