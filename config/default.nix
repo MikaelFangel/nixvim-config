@@ -2,6 +2,7 @@
   imports = [
     ./auto-pairs.nix
     ./autosave.nix
+    ./blankline.nix
     ./bufferline.nix
     ./cmp.nix
     ./git.nix
