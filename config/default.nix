@@ -5,6 +5,7 @@
     ./blankline.nix
     ./bufferline.nix
     ./cmp.nix
+    ./fidget.nix
     ./git.nix
     ./ionide.nix
     ./lightline.nix

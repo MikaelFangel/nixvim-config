@@ -48,6 +48,7 @@ Descriptions of all the config files/plugins used in this configuration.
 | bufferline.nix | Tab-like interface for easy buffer navigation. |
 | cmp.nix | Completion source with several options, including copilot. |
 | default.nix | Default configuration file for nixvim. |
+| fidget.nix | Show LSP notifications in the bottom corner. |
 | git.nix | Gitsigns shows git decorations in Lua, including signs for added, removed, and changed lines. |
 | ionide.nix | IDE-like features for F# programming. |
 | lightline.nix | Lightweight status line. |
