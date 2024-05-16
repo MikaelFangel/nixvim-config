@@ -3,6 +3,7 @@
     ./auto-pairs.nix
     ./autosave.nix
     ./bufferline.nix
+    ./ccc.nix
     ./cmp.nix
     ./git.nix
     ./ionide.nix

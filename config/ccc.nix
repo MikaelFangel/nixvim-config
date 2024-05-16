@@ -1,0 +1,5 @@
+{
+  plugins.ccc = {
+    enable = true;
+  };
+}
