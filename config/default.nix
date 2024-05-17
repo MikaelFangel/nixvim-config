@@ -1,24 +1,24 @@
 {
   imports = [
-    ./auto-pairs.nix
-    ./autosave.nix
-    ./blankline.nix
     ./bufferline.nix
     ./cmp.nix
-    ./fidget.nix
     ./git.nix
-    ./ionide.nix
     ./lightline.nix
-    ./lsp.nix
-    ./none-ls.nix
+    ./lsp/default.nix
+    ./lsp/fidget.nix
+    ./lsp/ionide.nix
+    ./lsp/none-ls.nix
+    ./lsp/trouble.nix
     ./nvim-tree.nix
     ./options.nix
-    ./telescope.nix
-    ./toggleterm.nix
     ./treesitter.nix
-    ./trouble.nix
-    ./which_key.nix
-    ./wilder.nix
+    ./utils/auto-pairs.nix
+    ./utils/autosave.nix
+    ./utils/blankline.nix
+    ./utils/telescope.nix
+    ./utils/toggleterm.nix
+    ./utils/which-key.nix
+    ./utils/wilder.nix
   ];
 
   colorschemes.dracula.enable = true;
