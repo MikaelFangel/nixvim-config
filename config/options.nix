@@ -6,6 +6,9 @@
 
     number = true;
     relativenumber = true;
+    splitbelow = true;
+    splitright = true;
+    scrolloff = 4;
 
     autoindent = true;
     clipboard = "unnamedplus";
