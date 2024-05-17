@@ -33,6 +33,15 @@
       action = "<CMD>NvimTreeToggle<CR>";
       options.desc = "Toggle NvimTree";
     }
+    {
+      key = "<leader>c";
+      action = "+context";
+    }
+    {
+      key = "<leader>co";
+      action = "<CMD>TSContextToggle<CR>";
+      options.desc = "Toggle Treesitter context";
+    }
 
     # File
     {
