@@ -9,6 +9,7 @@
       };
       formatting = {
         fantomas.enable = true;
+        gleam_format.enable = true;
         gofmt.enable = true;
         goimports.enable = true;
         ktlint.enable = true;
