@@ -6,6 +6,9 @@ pkgs.mkShell {
     cargo
     rustc
 
+    # Gleam
+    gleam
+
     # Elixir
     elixir
 
