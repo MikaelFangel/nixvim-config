@@ -23,8 +23,11 @@
 
   colorschemes.dracula.enable = true;
 
-  globals.mapleader = " ";
+  extraConfigVim = ''
+    autocmd BufRead,BufNewFile *.pl set filetype=prolog
+  '';
 
+  globals.mapleader = " ";
   keymaps = [
     # Global
     # Default mode is "" which means normal-visual-op
