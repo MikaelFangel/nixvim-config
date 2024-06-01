@@ -52,6 +52,11 @@
       options.desc = "Toggle Copilot Chat Window";
     }
     {
+      key = "<leader>cf";
+      action = "<CMD>CopilotChatFix<CR>";
+      options.desc = "Fix the selected code";
+    }
+    {
       key = "<leader>cs";
       action = "<CMD>CopilotChatStop<CR>";
       options.desc = "Stop current Copilot output";
