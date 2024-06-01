@@ -2,6 +2,7 @@
   imports = [
     ./bufferline.nix
     ./cmp.nix
+    ./copilot-chat.nix
     ./git.nix
     ./lightline.nix
     ./lsp/default.nix
