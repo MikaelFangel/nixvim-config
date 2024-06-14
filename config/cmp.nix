@@ -140,8 +140,10 @@
                 local line = vim.api.nvim_get_current_line()
                 if line:match("^%s*$") then
                   fallback()
+                elseif cmp.visible() then
+                  cmp.confirm({ behavior = cmp.ConfirmBehavior.Insert, select = true })
                 else
-                  cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Insert, select = true })
+                  fallback()
                 end
               end
             '';
