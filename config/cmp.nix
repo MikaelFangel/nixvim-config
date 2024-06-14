@@ -34,6 +34,7 @@
       enable = true;
 
       settings = {
+        experimental = { ghost_text = true; };
         snippet.expand = ''
           function(args)
             require('luasnip').lsp_expand(args.body)
@@ -131,10 +132,20 @@
           "<C-d>" = "cmp.mapping.scroll_docs(-4)";
           "<C-f>" = "cmp.mapping.scroll_docs(4)";
           "<C-Space>" = "cmp.mapping.complete()";
-          "<C-e>" = "cmp.mapping.close()";
-          "<CR>" =
-            "cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Insert, select = true })";
+          "<S-Tab>" = "cmp.mapping.close()";
           "<Tab>" =
+            # lua 
+            ''
+              function(fallback)
+                local line = vim.api.nvim_get_current_line()
+                if line:match("^%s*$") then
+                  fallback()
+                else
+                  cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Insert, select = true })
+                end
+              end
+            '';
+          "<Up>" =
             # lua
             ''
               function(fallback)
@@ -147,7 +158,7 @@
                 end
               end
             '';
-          "<S-Tab>" =
+          "<Down>" =
             # lua
             ''
               function(fallback)
