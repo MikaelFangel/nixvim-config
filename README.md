@@ -32,7 +32,7 @@ Then you can input this in your configuration.nix (be sure that you inherit inpu
 ```
   environment = {
     systemPackages = with pkgs; [
-      inputs.nixvim.packages."x86_64-linux".default
+      inputs.nixvim.packages.${system}.default
     ];
   };
 ```
