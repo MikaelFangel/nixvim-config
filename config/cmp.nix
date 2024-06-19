@@ -147,7 +147,7 @@
                 end
               end
             '';
-          "<Up>" =
+          "<Down>" =
             # lua
             ''
               function(fallback)
@@ -160,7 +160,7 @@
                 end
               end
             '';
-          "<Down>" =
+          "<Up>" =
             # lua
             ''
               function(fallback)
