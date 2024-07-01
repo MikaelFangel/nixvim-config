@@ -3,6 +3,7 @@
     enable = true;
     sources = {
       diagnostics = {
+        credo.enable = true;
         golangci_lint.enable = true;
         ktlint.enable = true;
         statix.enable = true;
