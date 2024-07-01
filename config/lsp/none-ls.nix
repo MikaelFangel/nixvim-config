@@ -3,7 +3,7 @@
     enable = true;
     sources = {
       diagnostics = {
-        credo.enable = true;
+        credo.enable = true; # requires credo to be defined in the mix file
         golangci_lint.enable = true;
         ktlint.enable = true;
         statix.enable = true;
