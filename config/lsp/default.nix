@@ -21,10 +21,6 @@
         "K" = "hover";
       };
     };
-    lsp-lines = {
-      enable = true;
-      currentLine = true;
-    };
     rust-tools.enable = true;
   };
 }
