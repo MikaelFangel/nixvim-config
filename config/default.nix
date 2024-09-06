@@ -187,7 +187,7 @@
     }
     {
       key = "<leader>dt";
-      action = "<CMD>TroubleToggle<CR>";
+      action = "<CMD>Trouble diagnostics toggle<CR>";
       options.desc = "Toggle trouble";
     }
 
