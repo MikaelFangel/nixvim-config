@@ -23,6 +23,7 @@
   ];
 
   colorschemes.dracula.enable = true;
+  plugins.web-devicons.enable = true;
 
   diagnostics = { virtual_lines.only_current_line = true; };
 
