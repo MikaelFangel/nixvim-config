@@ -1,3 +1,5 @@
+{ pkgs, ... }:
+
 {
   plugins = {
     lsp = {
@@ -8,10 +10,13 @@
         elixirls.enable = true;
         gleam.enable = true;
         gopls.enable = true;
-        kotlin-language-server.enable = true;
+        kotlin_language_server.enable = true;
         nixd.enable = true;
-        prolog-ls.enable = true;
-        ruff-lsp.enable = true;
+        prolog_ls = {
+          enable = true;
+          package = pkgs.swi-prolog;
+        };
+        ruff_lsp.enable = true;
       };
       keymaps.lspBuf = {
         "gd" = "definition";
