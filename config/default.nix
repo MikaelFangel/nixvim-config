@@ -16,6 +16,7 @@
     ./utils/auto-pairs.nix
     ./utils/autosave.nix
     ./utils/blankline.nix
+    ./utils/lazygit.nix
     ./utils/telescope.nix
     ./utils/toggleterm.nix
     ./utils/which-key.nix
