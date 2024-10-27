@@ -16,6 +16,7 @@
     ./utils/auto-pairs.nix
     ./utils/autosave.nix
     ./utils/blankline.nix
+    ./utils/lazygit.nix
     ./utils/telescope.nix
     ./utils/toggleterm.nix
     ./utils/which-key.nix
@@ -169,6 +170,16 @@
       key = "<leader>tp";
       action = "<CMD>tabprevious<CR>";
       options.desc = "Go to the previous tab";
+    }
+
+    # LazyGit
+    {
+      mode = "n";
+      key = "<leader>lg";
+      action = "<cmd>LazyGit<CR>";
+      options = {
+        desc = "LazyGit";
+      };
     }
 
     # Terminal
