@@ -202,19 +202,5 @@
       action = "<CMD>Trouble diagnostics toggle<CR>";
       options.desc = "Toggle trouble";
     }
-
-    # Rust
-    {
-      mode = "n";
-      key = "<leader>r";
-      action = "+rust";
-    }
-    {
-      # Start standalone rust-analyzer (fixes issues when opening files from nvim tree)
-      mode = "n";
-      key = "<leader>rs";
-      action = "<CMD>RustStartStandaloneServerForBuffer<CR>";
-      options.desc = "Start standalone rust-analyzer";
-    }
   ];
 }
