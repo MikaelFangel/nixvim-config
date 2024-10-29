@@ -14,7 +14,7 @@
         nixd.enable = true;
         prolog_ls = {
           enable = true;
-          package = pkgs.swi-prolog;
+          package = pkgs.swiProlog;
         };
         ruff_lsp.enable = true;
       };
