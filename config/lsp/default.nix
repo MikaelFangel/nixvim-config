@@ -16,7 +16,7 @@
           enable = true;
           package = pkgs.swi-prolog;
         };
-        ruff_lsp.enable = true;
+        ruff.enable = true;
       };
       keymaps.lspBuf = {
         "gd" = "definition";
