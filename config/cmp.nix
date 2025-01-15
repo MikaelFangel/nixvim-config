@@ -4,8 +4,8 @@
     luasnip.enable = true;
     copilot-lua = {
       enable = true;
-      suggestion.enabled = false;
       settings = {
+        suggestion.enabled = false;
         panel.enabled = false;
         filetypes = {
           yaml = false;
