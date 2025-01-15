@@ -1,10 +1,10 @@
 {
   plugins.fidget = {
     enable = true;
-    progress = {
-      suppressOnInsert = true;
-      ignoreDoneAlready = true;
-      pollRate = 0.5;
+    settings.progress = {
+      suppress_on_insert = true;
+      ignore_done_already = true;
+      poll_rate = 1;
     };
   };
 }
