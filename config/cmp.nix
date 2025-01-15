@@ -6,7 +6,7 @@
       enable = true;
       suggestion.enabled = false;
       panel.enabled = false;
-      filetypes = {
+      settings.filetypes = {
         yaml = false;
         markdown = false;
         help = false;
