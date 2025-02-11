@@ -2,6 +2,7 @@
   plugins = {
     treesitter = {
       enable = true;
+      gccPackage = null;
       nixGrammars = true;
       settings = {
         highlight.enable = true;
