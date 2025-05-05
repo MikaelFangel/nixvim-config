@@ -27,7 +27,7 @@
   colorschemes.dracula.enable = true;
   plugins.web-devicons.enable = true;
 
-  diagnostics = { virtual_lines.only_current_line = true; };
+  diagnostic.settings = { virtual_lines.only_current_line = true; };
 
   extraConfigVim = ''
     autocmd BufRead,BufNewFile *.pl set filetype=prolog
