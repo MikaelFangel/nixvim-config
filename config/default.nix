@@ -23,6 +23,7 @@
     ./utils/wilder.nix
   ];
 
+  dependencies.gcc.package = null;
   colorschemes.dracula.enable = true;
   plugins.web-devicons.enable = true;
 
