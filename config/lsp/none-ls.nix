@@ -7,6 +7,7 @@
         golangci_lint.enable = true;
         ktlint.enable = true;
         statix.enable = true;
+        markdownlint.enable = true;
       };
       formatting = {
         fantomas.enable = true;

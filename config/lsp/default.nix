@@ -12,6 +12,7 @@
         ruff.enable = true;
         pyre.enable = true;
         tflint.enable = true;
+        marksman.enable = true;
 
         # Packages is set to null to rely on the system wide installed packages
         # this is done to avoid conflicts with the nixpkgs versions.
@@ -39,6 +40,10 @@
         tofu_ls = {
           enable = true;
           package = null; # default pkgs.tofu-l
+        };
+        harper_ls = {
+          enable = true;
+          filestypes = [ "makedow" ];
         };
       };
       keymaps.lspBuf = {
