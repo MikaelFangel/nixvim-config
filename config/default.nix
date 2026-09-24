@@ -2,7 +2,6 @@
   imports = [
     ./bufferline.nix
     ./cmp.nix
-    ./copilot-chat.nix
     ./git.nix
     ./lightline.nix
     ./lsp/default.nix
@@ -17,6 +16,7 @@
     ./utils/autosave.nix
     ./utils/blankline.nix
     ./utils/lazygit.nix
+    ./utils/render-markdown.nix
     ./utils/telescope.nix
     ./utils/toggleterm.nix
     ./utils/which-key.nix
@@ -27,7 +27,7 @@
   colorschemes.dracula.enable = true;
   plugins.web-devicons.enable = true;
 
-  diagnostic.settings = { virtual_lines.only_current_line = true; };
+  diagnostic.settings = { virtual_lines.current_line = true; };
 
   extraConfigVim = ''
     autocmd BufRead,BufNewFile *.pl set filetype=prolog
@@ -42,57 +42,8 @@
       action = "<CMD>NvimTreeToggle<CR>";
       options.desc = "Toggle NvimTree";
     }
-    {
-      key = "<leader>c";
-      action = "+context";
-    }
-    {
-      key = "<leader>co";
-      action = "<CMD>TSContextToggle<CR>";
-      options.desc = "Toggle Treesitter context";
-    }
-    {
-      key = "<leader>ct";
-      action = "<CMD>CopilotChatToggle<CR>";
-      options.desc = "Toggle Copilot Chat Window";
-    }
-    {
-      key = "<leader>cf";
-      action = "<CMD>CopilotChatFix<CR>";
-      options.desc = "Fix the selected code";
-    }
-    {
-      key = "<leader>cs";
-      action = "<CMD>CopilotChatStop<CR>";
-      options.desc = "Stop current Copilot output";
-    }
-    {
-      key = "<leader>cr";
-      action = "<CMD>CopilotChatReview<CR>";
-      options.desc = "Review the selected code";
-    }
-    {
-      key = "<leader>ce";
-      action = "<CMD>CopilotChatExplain<CR>";
-      options.desc = "Give an explanation for the selected code";
-    }
-    {
-      key = "<leader>cd";
-      action = "<CMD>CopilotChatDocs<CR>";
-      options.desc = "Add documentation for the selection";
-    }
-    {
-      key = "<leader>cp";
-      action = "<CMD>CopilotChatTests<CR>";
-      options.desc = "Add tests for my code";
-    }
 
     # File
-    {
-      mode = "n";
-      key = "<leader>f";
-      action = "+find/file";
-    }
     {
       # Format file
       key = "<leader>fm";
@@ -102,34 +53,19 @@
 
     # Git    
     {
-      mode = "n";
-      key = "<leader>g";
-      action = "+git";
-    }
-    {
-      mode = "n";
-      key = "<leader>gt";
-      action = "+toggles";
-    }
-    {
       key = "<leader>gtb";
       action = "<CMD>Gitsigns toggle_current_line_blame<CR>";
       options.desc = "Gitsigns current line blame";
     }
     {
       key = "<leader>gtd";
-      action = "<CMD>Gitsigns toggle_deleted";
+      action = "<CMD>Gitsigns toggle_deleted<CR>";
       options.desc = "Gitsigns deleted";
     }
     {
       key = "<leader>gd";
       action = "<CMD>Gitsigns diffthis<CR>";
       options.desc = "Gitsigns diff this buffer";
-    }
-    {
-      mode = "n";
-      key = "<leader>gr";
-      action = "+resets";
     }
     {
       key = "<leader>grh";
@@ -143,11 +79,6 @@
     }
 
     # Tabs
-    {
-      mode = "n";
-      key = "<leader>t";
-      action = "+tab";
-    }
     {
       mode = "n";
       key = "<leader>tn";
@@ -193,11 +124,6 @@
     }
 
     # Trouble 
-    {
-      mode = "n";
-      key = "<leader>d";
-      action = "+diagnostics/debug";
-    }
     {
       key = "<leader>dt";
       action = "<CMD>Trouble diagnostics toggle<CR>";

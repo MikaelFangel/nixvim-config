@@ -2,41 +2,29 @@
 {
   plugins = {
     luasnip.enable = true;
-    copilot-lua = {
+    cmp-buffer = {
       enable = true;
-      settings = {
-        suggestion.enabled = false;
-        panel.enabled = false;
-        filetypes = {
-          yaml = false;
-          markdown = false;
-          help = false;
-          gleam = false; # Copilot doesn't really help when writing Gleam
-          gitcommit = false;
-          gitrebase = false;
-          hgcommit = false;
-          svn = false;
-          cvs = false;
-          "." = false;
-        };
-      };
     };
 
-    cmp-buffer = { enable = true; };
+    cmp-nvim-lsp = {
+      enable = true;
+    };
 
-    cmp-emoji = { enable = true; };
+    cmp-path = {
+      enable = true;
+    };
 
-    cmp-nvim-lsp = { enable = true; };
-
-    cmp-path = { enable = true; };
-
-    cmp_luasnip = { enable = true; };
+    cmp_luasnip = {
+      enable = true;
+    };
 
     cmp = {
       enable = true;
 
       settings = {
-        experimental = { ghost_text = true; };
+        experimental = {
+          ghost_text = true;
+        };
         snippet.expand = ''
           function(args)
             require('luasnip').lsp_expand(args.body)
@@ -51,11 +39,14 @@
           }
           { name = "nvim_lua"; }
           { name = "path"; }
-          { name = "copilot"; }
         ];
 
         formatting = {
-          fields = [ "abbr" "kind" "menu" ];
+          fields = [
+            "abbr"
+            "kind"
+            "menu"
+          ];
           format =
             # lua
             ''
@@ -98,7 +89,6 @@
                   Calendar = "",
                   Watch = "󰥔",
                   Package = "",
-                  Copilot = "",
                   Codeium = "",
                   TabNine = "",
                 }
@@ -112,17 +102,33 @@
 
         window = {
           completion = {
-            winhighlight =
-              "FloatBorder:CmpBorder,Normal:CmpPmenu,CursorLine:CmpSel,Search:PmenuSel";
+            winhighlight = "FloatBorder:CmpBorder,Normal:CmpPmenu,CursorLine:CmpSel,Search:PmenuSel";
             scrollbar = false;
             sidePadding = 0;
-            border = [ "╭" "─" "╮" "│" "╯" "─" "╰" "│" ];
+            border = [
+              "╭"
+              "─"
+              "╮"
+              "│"
+              "╯"
+              "─"
+              "╰"
+              "│"
+            ];
           };
 
-          settings.documentation = {
-            border = [ "╭" "─" "╮" "│" "╯" "─" "╰" "│" ];
-            winhighlight =
-              "FloatBorder:CmpBorder,Normal:CmpPmenu,CursorLine:CmpSel,Search:PmenuSel";
+          documentation = {
+            border = [
+              "╭"
+              "─"
+              "╮"
+              "│"
+              "╯"
+              "─"
+              "╰"
+              "│"
+            ];
+            winhighlight = "FloatBorder:CmpBorder,Normal:CmpPmenu,CursorLine:CmpSel,Search:PmenuSel";
           };
         };
 
@@ -136,7 +142,7 @@
           "<C-Space>" = "cmp.mapping.complete()";
           "<S-Tab>" = "cmp.mapping.close()";
           "<Tab>" =
-            # lua 
+            # lua
             ''
               function(fallback)
                 local line = vim.api.nvim_get_current_line()

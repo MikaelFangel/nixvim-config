@@ -9,7 +9,6 @@ Because who doesn't like a declarative configuration of Neovim?
 <details>
 <summary>More Screenshots</summary>
 
-![Screenshot of configuration](/images/copilot.png)
 ![Screenshot of configuration](/images/trouble.png)
 </details>
 
@@ -46,7 +45,7 @@ Descriptions of all the config files/plugins used in this configuration.
 | auto-pairs.nix | Pairs brackets and quotes automatically. |
 | autosave.nix | Saves changes to disk automatically. |
 | bufferline.nix | Tab-like interface for easy buffer navigation. |
-| cmp.nix | Completion source with several options, including copilot. |
+| cmp.nix | Completion source with several options. |
 | default.nix | Default configuration file for nixvim. |
 | fidget.nix | Show LSP notifications in the bottom corner. |
 | git.nix | Gitsigns shows git decorations in Lua, including signs for added, removed, and changed lines. |
