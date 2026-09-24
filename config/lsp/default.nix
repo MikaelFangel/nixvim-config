@@ -11,6 +11,7 @@
         nixd.enable = true;
         ruff.enable = true;
         pyre.enable = true;
+        tflint.enable = true;
 
         # Packages is set to null to rely on the system wide installed packages
         # this is done to avoid conflicts with the nixpkgs versions.
@@ -34,6 +35,10 @@
         prolog_ls = {
           enable = true;
           package = null; # default pkgs.swi-prolog;
+        };
+        tofu_ls = {
+          enable = true;
+          package = null; # default pkgs.tofu-l
         };
       };
       keymaps.lspBuf = {
