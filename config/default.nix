@@ -27,7 +27,7 @@
   colorschemes.dracula.enable = true;
   plugins.web-devicons.enable = true;
 
-  diagnostic.settings = { virtual_lines.only_current_line = true; };
+  diagnostic.settings = { virtual_lines.current_line = true; };
 
   extraConfigVim = ''
     autocmd BufRead,BufNewFile *.pl set filetype=prolog
@@ -42,17 +42,8 @@
       action = "<CMD>NvimTreeToggle<CR>";
       options.desc = "Toggle NvimTree";
     }
-    {
-      key = "<leader>c";
-      action = "+context";
-    }
 
     # File
-    {
-      mode = "n";
-      key = "<leader>f";
-      action = "+find/file";
-    }
     {
       # Format file
       key = "<leader>fm";
@@ -62,34 +53,19 @@
 
     # Git    
     {
-      mode = "n";
-      key = "<leader>g";
-      action = "+git";
-    }
-    {
-      mode = "n";
-      key = "<leader>gt";
-      action = "+toggles";
-    }
-    {
       key = "<leader>gtb";
       action = "<CMD>Gitsigns toggle_current_line_blame<CR>";
       options.desc = "Gitsigns current line blame";
     }
     {
       key = "<leader>gtd";
-      action = "<CMD>Gitsigns toggle_deleted";
+      action = "<CMD>Gitsigns toggle_deleted<CR>";
       options.desc = "Gitsigns deleted";
     }
     {
       key = "<leader>gd";
       action = "<CMD>Gitsigns diffthis<CR>";
       options.desc = "Gitsigns diff this buffer";
-    }
-    {
-      mode = "n";
-      key = "<leader>gr";
-      action = "+resets";
     }
     {
       key = "<leader>grh";
@@ -103,11 +79,6 @@
     }
 
     # Tabs
-    {
-      mode = "n";
-      key = "<leader>t";
-      action = "+tab";
-    }
     {
       mode = "n";
       key = "<leader>tn";
@@ -153,11 +124,6 @@
     }
 
     # Trouble 
-    {
-      mode = "n";
-      key = "<leader>d";
-      action = "+diagnostics/debug";
-    }
     {
       key = "<leader>dt";
       action = "<CMD>Trouble diagnostics toggle<CR>";

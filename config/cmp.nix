@@ -24,8 +24,6 @@
 
     cmp-buffer = { enable = true; };
 
-    cmp-emoji = { enable = true; };
-
     cmp-nvim-lsp = { enable = true; };
 
     cmp-path = { enable = true; };
@@ -119,7 +117,7 @@
             border = [ "╭" "─" "╮" "│" "╯" "─" "╰" "│" ];
           };
 
-          settings.documentation = {
+          documentation = {
             border = [ "╭" "─" "╮" "│" "╯" "─" "╰" "│" ];
             winhighlight =
               "FloatBorder:CmpBorder,Normal:CmpPmenu,CursorLine:CmpSel,Search:PmenuSel";

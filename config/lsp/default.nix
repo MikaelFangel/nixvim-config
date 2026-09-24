@@ -10,7 +10,7 @@
         clangd.enable = true;
         nixd.enable = true;
         ruff.enable = true;
-        pyre.enable = true;
+        pyrefly.enable = true;
         tflint.enable = true;
         marksman.enable = true;
 
@@ -43,7 +43,7 @@
         };
         harper_ls = {
           enable = true;
-          filestypes = [ "makedow" ];
+          filetypes = [ "markdown" ];
         };
       };
       keymaps.lspBuf = {
