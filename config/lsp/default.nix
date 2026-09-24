@@ -10,6 +10,7 @@
         clangd.enable = true;
         nixd.enable = true;
         ruff.enable = true;
+        pyre.enable = true;
 
         # Packages is set to null to rely on the system wide installed packages
         # this is done to avoid conflicts with the nixpkgs versions.
